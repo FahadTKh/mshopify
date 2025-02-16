@@ -1,0 +1,96 @@
+{% schema %}
+{
+  "name": "Custom Text Links",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "Text 1"
+    },
+    {
+      "type": "url",
+      "id": "link_1",
+      "label": "Link 1"
+    },
+    {
+      "type": "text",
+      "id": "text_2",
+      "label": "Text 2"
+    },
+    {
+      "type": "url",
+      "id": "link_2",
+      "label": "Link 2"
+    },
+    {
+      "type": "text",
+      "id": "text_3",
+      "label": "Text 3"
+    },
+    {
+      "type": "url",
+      "id": "link_3",
+      "label": "Link 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Text Links",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="custom-text-links">
+  <ul>
+    {% if section.settings.text_1 != blank %}
+      <li>
+        <a href="{{ section.settings.link_1 }}">{{- section.settings.text_1 }} ↗ </a>
+      </li>
+    {% endif %}
+    {% if section.settings.text_2 != blank %}
+      <li class="lineone">
+        <a href="{{ section.settings.link_2 }}">
+          {{- section.settings.text_2 -}}
+          ↗
+        </a>
+      </li>
+    {% endif %}
+    {% if section.settings.text_3 != blank %}
+      <li>
+        <a href="{{ section.settings.link_3 }}">{{ section.settings.text_3 }}</a>
+      </li>
+    {% endif %}
+  </ul>
+</div>
+
+<style>
+    .custom-text-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .custom-text-links li {
+  padding: 12px 10px;
+      width: 33.33%;
+      text-align:center;
+    }
+  .custom-text-links li.lineone{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+  }
+  .custom-text-links li:last-child{
+    background: #DEEFAB;
+  }
+    .custom-text-links a {
+      text-decoration: none;
+      color: #333;
+      text-transform: uppercase;
+    }
+    .custom-text-links a:hover {
+      color: #333;
+    }
+</style>

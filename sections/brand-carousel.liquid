@@ -1,0 +1,121 @@
+{% schema %}
+{
+  "name": "Brand Logo Carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Our Trusted Brands"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Brand Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "brand_logo",
+          "label": "Upload Brand Logo"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand Logo Carousel",
+      "category": "Custom",
+      "blocks": [
+        { "type": "logo" },
+        { "type": "logo" },
+        { "type": "logo" },
+        { "type": "logo" }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<section class="brand-carousel">
+  <h2 class="carousel-heading">{{ section.settings.heading }}</h2>
+  <div class="carousel-wrapper">
+    <div class="carousel-track">
+      {% for block in section.blocks %}
+        {% if block.settings.brand_logo != blank %}
+          <div class="carousel-slide">
+            <img src="{{ block.settings.brand_logo | image_url }}" alt="Brand Logo">
+          </div>
+        {% endif %}
+      {% endfor %}
+      <!-- Duplicate for infinite scrolling effect -->
+      {% for block in section.blocks %}
+        {% if block.settings.brand_logo != blank %}
+          <div class="carousel-slide">
+            <img src="{{ block.settings.brand_logo | image_url }}" alt="Brand Logo">
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .brand-carousel {
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .carousel-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .carousel-wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .carousel-track {
+    display: flex;
+    width: 200%;
+    animation: scroll 10s linear infinite;
+  }
+
+  .carousel-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 150px;
+    margin: 0 20px;
+  }
+
+  .carousel-slide img {
+    max-width: 100%;
+    max-height: 60px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .carousel-slide img:hover {
+    filter: grayscale(0%);
+  }
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-slide {
+      width: 100px;
+      margin: 0 10px;
+    }
+  }
+</style>

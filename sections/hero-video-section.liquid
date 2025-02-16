@@ -1,0 +1,170 @@
+{% schema %}
+{
+  "name": "Hero Video Section",
+  "settings": [
+    {
+      "type": "video",
+      "id": "background_video",
+      "label": "Background Video"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "#1 CLEAN DERMATOLOGIST-TESTED"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Your scalp’s microbiome is complex."
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Description",
+      "default": "We make it simple."
+    },
+    {
+      "type": "text",
+      "id": "button1_text",
+      "label": "Button 1 Text",
+      "default": "SHOP DANDRUFF CARE"
+    },
+    {
+      "type": "url",
+      "id": "button1_link",
+      "label": "Button 1 Link"
+    },
+    {
+      "type": "text",
+      "id": "button2_text",
+      "label": "Button 2 Text",
+      "default": "SHOP DRY-SCALP CARE"
+    },
+    {
+      "type": "url",
+      "id": "button2_link",
+      "label": "Button 2 Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Video Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="hero-video-section">
+  <video autoplay loop muted playsinline class="background-video">
+    <source src="https://cdn.pixabay.com/video/2022/12/11/142528-780232204_tiny.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="content">
+    <span class="subheading">{{ section.settings.subheading }}</span>
+    <div class="heading sub1">{{ section.settings.heading }}</div>
+    <p class="description">{{ section.settings.description }}</p>
+    <div class="buttons">
+      <a href="{{ section.settings.button1_link }}" class="btn">{{ section.settings.button1_text }} ↗</a>
+      <a href="{{ section.settings.button2_link }}" class="btn">{{ section.settings.button2_text }} ↗</a>
+    </div>
+  </div>
+</div>
+
+<style>
+                    .hero-video-section {
+                      position: relative;
+                      width: 100%;
+                      height: 90vh;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      text-align: center;
+                      color: #fff;
+                      overflow: hidden;
+                    }
+
+                    .background-video {
+                      position: absolute;
+                      top: 50%;
+                      left: 50%;
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      transform: translate(-50%, -50%);
+                      z-index: -1;
+                    }
+
+                    .content {
+                      position: relative;
+                      z-index: 2;
+                      max-width: 880px;
+                      flex-direction: column;
+                      gap: 10px !important;
+                    }
+
+                    .subheading {
+                      text-transform: uppercase;
+                  font-weight: 700;
+                  font-size: 14px;
+                  line-height: 21.7px;
+                  letter-spacing: 2%;
+                  text-align: center;
+
+                    }
+
+                    .sub1 {
+                font-weight: 400 !important;
+                font-size: 14px !important;
+                line-height: 21px;
+                letter-spacing: -0.12px;
+                text-align: center;
+          margin:0 !important;
+                    }
+
+                    .description {
+              font-weight: 400;
+              font-size: 48px !important;
+              line-height: 57.6px;
+              text-align: center;
+                    }
+
+                    .buttons {
+                      margin-top: 20px;
+                    }
+
+                    .btn {
+                      display: inline-block;
+                      padding: 16px 32px;
+                      background: #fff;
+                      color: #000;
+                      border-radius: 100px;
+                      text-decoration: none;
+                      margin: 10px;
+                      transition: all 0.3s ease;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+                    }
+      @media screen and (max-width: 480px){
+      .description {
+          font-size: 32px !important;
+          line-height: 37.6px;
+          margin-top: 105px !important;
+        margin-bottom:0 Important;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+    }
+        .btn {
+      padding: 8px 12px !important;
+      margin: 3px !important;
+      font-size: 11px !important;
+  }
+
+      }
+</style>
