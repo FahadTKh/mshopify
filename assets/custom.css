@@ -2,6 +2,9 @@
   font-family: AntarcticanMono;
   src: url('{{ "AntarcticanMono-Medium.woff" | asset_url }}') format('woff');
 }
+body {
+    font-family: AntarcticanMono !important;
+}
 .header-wrapper--border-bottom{
   border-top: 1px solid #333333;
   border-bottom: 1px solid #333333 !important;
