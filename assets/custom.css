@@ -136,11 +136,4 @@ line-height: 24px;
   .image-with-text__content .image-with-text__text+.button {
     margin-top: 0rem !important;
 }
-  .image-with-text .gradient img{
-    width:70% !important;
-    height:70% !important;
-  }
-  .image-with-text.collapse-corners:not(.image-with-text--overlap) .grid__item .image-with-text__media{
-    padding-bottom:10% !important;
-  }
 }
