@@ -27,7 +27,7 @@
         "section_background_color": "linear-gradient(127deg, rgba(241, 246, 251, 1) 11%, rgba(241, 246, 251, 1) 81%)",
         "section_background_image_color": "",
         "section_background_size": "cover",
-        "section_padding_top_bottom": 25,
+        "section_padding_top_bottom": 100,
         "mobile_section_padding_top_bottom": 25,
         "section_padding_left_right": 0,
         "mobile_section_padding_left_right": 0,
