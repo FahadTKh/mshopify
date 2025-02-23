@@ -9,16 +9,59 @@
  */
 {
   "sections": {
-    "hero_video_section_LVEjYQ": {
-      "type": "hero-video-section",
+    "sp_hero_FXNeqX": {
+      "type": "sp-hero",
       "settings": {
-        "subheading": "#1 Clean Dermatologist-tested",
-        "heading": "Dandruff & Dry Scalp Brand",
-        "description": "Your scalp’s microbiome is complex. We make it simple.",
-        "button1_text": "SHOP DANDRUFF CARE",
-        "button1_link": "",
-        "button2_text": "SHOP DRY-SCALP CARE",
-        "button2_link": ""
+        "override_fonts": true,
+        "headline_font": "sans-serif",
+        "text_font": "sans-serif",
+        "text_size": 15,
+        "mobile_text_size": 15,
+        "text_line_height": "inherit",
+        "headline_size": 40,
+        "mobile_headline_size": 40,
+        "headline_line_height": "inherit",
+        "text_color": "#ffffff",
+        "link_color": "#005bd3",
+        "show_on_device": "all",
+        "section_background_color": "linear-gradient(127deg, rgba(241, 246, 251, 1) 11%, rgba(241, 246, 251, 1) 81%)",
+        "section_background_image": "shopify://shop_images/Perfucio_Perfumery_Logo_-_16.png",
+        "section_background_image_color": "#000000",
+        "section_background_size": "cover",
+        "section_padding_top_bottom": 0,
+        "mobile_section_padding_top_bottom": 0,
+        "section_padding_left_right": 0,
+        "mobile_section_padding_left_right": 0,
+        "container_background_color": "",
+        "container_max_width": 1200,
+        "container_padding_top_bottom": 10,
+        "mobile_container_padding_top_bottom": 10,
+        "container_padding_left_right": 10,
+        "mobile_container_padding_left_right": 10,
+        "element_spacing": 15,
+        "container_radius": 0,
+        "container_shadow": false,
+        "container_border_size": 0,
+        "container_border_color": "#888",
+        "grid_padding_tb": 100,
+        "grid_padding_lr": 10,
+        "show_text_shadow": true,
+        "cover_background": "linear-gradient(164deg, rgba(17, 17, 17, 1), rgba(85, 85, 85, 1) 100%)",
+        "cover_opacity": 25,
+        "box_alignment": "center",
+        "button_background_color": "linear-gradient(164deg, rgba(17, 17, 17, 1), rgba(51, 51, 51, 1) 100%)",
+        "button_text_color": "#fff",
+        "button_padding_tb": 10,
+        "button_padding_lr": 25,
+        "button_border_radius": 5,
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "headline": "<strong>This is our hero tagline</strong>",
+        "content": "<p>Use this to add a description to your hero section. This block supports richtext, so you can line breaks, lists, headlines, and more.</p>",
+        "cta": "Shop Now",
+        "cta_link": "",
+        "image_size": 1200,
+        "mobile_image_size": 800
       }
     },
     "collapsible_content_YkX3mV": {
@@ -135,7 +178,7 @@
     }
   },
   "order": [
-    "hero_video_section_LVEjYQ",
+    "sp_hero_FXNeqX",
     "collapsible_content_YkX3mV",
     "collection_list_FnHkyj"
   ]
