@@ -21,116 +21,6 @@
         "button2_link": ""
       }
     },
-    "brand_carousel_tBVVpr": {
-      "type": "brand-carousel",
-      "blocks": {
-        "logo_FyDkt9": {
-          "type": "logo",
-          "settings": {
-            "brand_logo": "shopify://shop_images/brand1.png"
-          }
-        },
-        "logo_9CktBL": {
-          "type": "logo",
-          "settings": {
-            "brand_logo": "shopify://shop_images/brand2.png"
-          }
-        },
-        "logo_xtDLRg": {
-          "type": "logo",
-          "settings": {
-            "brand_logo": "shopify://shop_images/brand1.png"
-          }
-        },
-        "logo_DFc8Pa": {
-          "type": "logo",
-          "settings": {
-            "brand_logo": "shopify://shop_images/brand2.png"
-          }
-        },
-        "logo_g9kJYd": {
-          "type": "logo",
-          "settings": {
-            "brand_logo": "shopify://shop_images/brand1.png"
-          }
-        },
-        "logo_LPRKHJ": {
-          "type": "logo",
-          "settings": {
-            "brand_logo": "shopify://shop_images/brand2.png"
-          }
-        },
-        "logo_j3c7xX": {
-          "type": "logo",
-          "settings": {
-            "brand_logo": "shopify://shop_images/brand1.png"
-          }
-        },
-        "logo_ChEdtX": {
-          "type": "logo",
-          "settings": {
-            "brand_logo": "shopify://shop_images/brand2.png"
-          }
-        }
-      },
-      "block_order": [
-        "logo_FyDkt9",
-        "logo_9CktBL",
-        "logo_xtDLRg",
-        "logo_DFc8Pa",
-        "logo_g9kJYd",
-        "logo_LPRKHJ",
-        "logo_j3c7xX",
-        "logo_ChEdtX"
-      ],
-      "settings": {
-        "heading": ""
-      }
-    },
-    "product_slider_tabs_XcwqzF": {
-      "type": "product-slider-tabs",
-      "blocks": {
-        "tab_g9KH4r": {
-          "type": "tab",
-          "settings": {
-            "tab_name": "Shampoos",
-            "collection": "shampoos"
-          }
-        },
-        "tab_a7MiMK": {
-          "type": "tab",
-          "settings": {
-            "tab_name": "Conditioners",
-            "collection": "conditioners"
-          }
-        },
-        "tab_nrtYFn": {
-          "type": "tab",
-          "settings": {
-            "tab_name": "Leave-ons",
-            "collection": "leave-ons"
-          }
-        },
-        "tab_Hpdp3N": {
-          "type": "tab",
-          "settings": {
-            "tab_name": "Exfoliators",
-            "collection": "exfoliators"
-          }
-        }
-      },
-      "block_order": [
-        "tab_g9KH4r",
-        "tab_a7MiMK",
-        "tab_nrtYFn",
-        "tab_Hpdp3N"
-      ],
-      "settings": {
-        "heading": "Discover by Category",
-        "text_1": "Shop all Shampoos",
-        "link_1": ""
-      }
-    },
     "collapsible_content_YkX3mV": {
       "type": "collapsible-content",
       "blocks": {
@@ -187,6 +77,7 @@
         "collapsible_row_4YGwgi",
         "collapsible_row_Dtf7U4"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Frequenty Asked Questions",
@@ -202,59 +93,42 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_m7QeWA": {
-      "type": "image-with-text",
+    "collection_list_FnHkyj": {
+      "type": "collection-list",
       "blocks": {
-        "caption_pGMJbE": {
-          "type": "caption",
+        "featured_collection_3rUp6X": {
+          "type": "featured_collection",
           "settings": {
-            "caption": "⬤ salon-quality",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "collection": "asia"
           }
         },
-        "heading_rFBWzT": {
-          "type": "heading",
+        "featured_collection_ix9MLP": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "Lorem ipsum dolor sit amet consectetur. Pellentesque.",
-            "heading_size": "h1"
+            "collection": "melbourne"
           }
         },
-        "text_EyQtzy": {
-          "type": "text",
+        "featured_collection_Qbciy8": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetur. Viverra ut ullamcorper nunc quam placerat. Mollis penatibus hendrerit lectus netus eget a vel consequat. Ornare eu sem ultrices at vitae venenatis viverra est posuere. </p>",
-            "text_style": "body"
-          }
-        },
-        "button_G3YXFy": {
-          "type": "button",
-          "settings": {
-            "button_label": "TAKE THE QUIZ",
-            "button_link": "#",
-            "button_style_secondary": false
+            "collection": "middle-east-collection"
           }
         }
       },
       "block_order": [
-        "caption_pGMJbE",
-        "heading_rFBWzT",
-        "text_EyQtzy",
-        "button_G3YXFy"
+        "featured_collection_3rUp6X",
+        "featured_collection_ix9MLP",
+        "featured_collection_Qbciy8"
       ],
-      "custom_css": [],
       "settings": {
-        "image": "shopify://shop_images/app1.png",
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-78fadebe-9e4f-4b72-831e-5893d95cde27",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -262,9 +136,7 @@
   },
   "order": [
     "hero_video_section_LVEjYQ",
-    "brand_carousel_tBVVpr",
-    "product_slider_tabs_XcwqzF",
     "collapsible_content_YkX3mV",
-    "image_with_text_m7QeWA"
+    "collection_list_FnHkyj"
   ]
 }
